@@ -1,0 +1,54 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    background-color: #353535;
+    z-index: 8;
+    font-family: 'Sorcerer';
+    position: relative;
+    margin-top: 40px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+        .contact__head-text {
+            color: #d3d3d3;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 45px;
+        }
+
+        .footer__contact {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 360px;
+
+    
+            .contact__item {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 9px;
+    
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
+        
+                a {
+                    text-decoration: none;
+                    color: #d3d3d3;
+                    font-size: 12px;
+                    font-weight: bold;
+                    margin: 3px;
+                }
+            }
+        }
+    }
+}

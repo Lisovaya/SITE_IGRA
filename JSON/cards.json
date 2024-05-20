@@ -1,0 +1,252 @@
+{
+    "characters": [
+        {
+            "name": "Китнисс Эвердин",
+            "image": "../IMG/card_person/person9.png",
+            "gender": "Женский",
+            "health": 100,
+            "strength": 70,
+            "hunger": 40,
+            "weapon_type": "Лук",
+            "district": "9"
+        },
+        {
+            "name": "Пит Мелларк",
+            "image": "../IMG/card_person/person5.png",
+            "gender": "Мужской",
+            "health": 80,
+            "strength": 80,
+            "hunger": 50,
+            "weapon_type": "Тесак",
+            "district": "8"
+        },
+        {
+            "name": "Финник Одэйр",
+            "image": "../IMG/card_person/person8.png",
+            "gender": "Мужской",
+            "health": 100,
+            "strength": 90,
+            "hunger": 60,
+            "weapon_type": "Трезубец",
+            "district": "7"
+        },
+        {
+            "name": "Блеск Ритчсон",
+            "image": "../IMG/card_person/person2.png",
+            "gender": "Мужской",
+            "health": 90,
+            "strength": 80,
+            "hunger": 20,
+            "weapon_type": "Нож",
+            "district": "5"
+        },
+        {
+            "name": "Брут Саммерс",
+            "image": "../IMG/card_person/person3.png",
+            "gender": "Мужской",
+            "health": 60,
+            "strength": 100,
+            "hunger": 50,
+            "weapon_type": "Топор",
+            "district": "2"
+        },
+        {
+            "name": "Вайресс Литье",
+            "image": "../IMG/card_person/person6.png",
+            "gender": "Женский",
+            "health": 50,
+            "strength": 30,
+            "hunger": 70,
+            "weapon_type": "Сюрикен",
+            "district": "6"
+        },
+        {
+            "name": "Кашмира Стайнер",
+            "image": "../IMG/card_person/person7.png",
+            "gender": "Женский",
+            "health": 80,
+            "strength": 50,
+            "hunger": 20,
+            "weapon_type": "Лук",
+            "district": "11"
+        },
+        {
+            "name": "Энобария Голдинг",
+            "image": "../IMG/card_person/person4.png",
+            "gender": "Женский",
+            "health": 80,
+            "strength": 50,
+            "hunger": 20,
+            "weapon_type": "Меч",
+            "district": "3"
+        },
+        {
+            "name": "Мэгз Флэнэгэн",
+            "image": "../IMG/card_person/person1.png",
+            "gender": "Женский",
+            "health": 30,
+            "strength": 20,
+            "hunger": 80,
+            "weapon_type": "Любое",
+            "district": "1"
+        },
+        {
+            "name": "Бити Литье",
+            "image": "../IMG/card_person/person11.png",
+            "gender": "Мужской",
+            "health": 70,
+            "strength": 40,
+            "hunger": 30,
+            "weapon_type": "Нож",
+            "district": "10"
+        },
+        {
+            "name": "Джоанна Мейсон",
+            "image": "../IMG/card_person/person10.png",
+            "gender": "Женский",
+            "health": 60,
+            "strength": 60,
+            "hunger": 20,
+            "weapon_type": "Топор",
+            "district": "4"
+        }
+    ],
+    "weapons": [
+        {
+            "name": "Обычный трезубец",
+            "image": "../IMG/card_orydie/orydie2.png",
+            "quality": "Простое",
+            "strength": 20
+        },
+        {
+            "name": "Золотой трезубец",
+            "image": "../IMG/card_orydie/orydie1.png",
+            "quality": "Отличное",
+            "strength": 60
+        },
+        {
+            "name": "Деревяный топор",
+            "image": "../IMG/card_orydie/orydie3.png",
+            "quality": "Простое",
+            "strength": 40
+        },
+        {
+            "name": "Металлический топор",
+            "image": "../IMG/card_orydie/orydie4.png",
+            "quality": "Отличное",
+            "strength": 70
+        },
+        {
+            "name": "Простой лук",
+            "image": "../IMG/card_orydie/orydie5.png",
+            "quality": "Простое",
+            "strength": 30
+        },
+        {
+            "name": "Лук с прицелом",
+            "image": "../IMG/card_orydie/orydie6.png",
+            "quality": "Отличное",
+            "strength": 60
+        },
+        {
+            "name": "Обычный нож",
+            "image": "../IMG/card_orydie/orydie7.png",
+            "quality": "Простое",
+            "strength": 20
+        },
+        {
+            "name": "Солнечный нож",
+            "image": "../IMG/card_orydie/orydie8.png",
+            "quality": "Отличное",
+            "strength": 50
+        },
+        {
+            "name": "Сюрикены",
+            "image": "../IMG/card_orydie/orydie9.png",
+            "quality": "Простое",
+            "strength": 40
+        },
+        {
+            "name": "Тесак",
+            "image": "../IMG/card_orydie/orydie10.png",
+            "quality": "Простое",
+            "strength": 60
+        },
+        {
+            "name": "Меч",
+            "image": "../IMG/card_orydie/orydie11.png",
+            "quality": "Простое",
+            "strength": 50
+        }
+    ],
+    "bosses": [
+        {
+            "name": "Двухголовый пёс",
+            "image": "../IMG/card_boss/boss1.png",
+            "health": 300,
+            "strength": 80,
+            "description": "Двухголовый пёс — страшное создание в мире Голодных игр. Его фигура, покрытая шрамами и волосами, словно символ зла. У каждой из его двух голов огромные челюсти, полные агрессии. Глаза сверкают яростью, дыхание тяжёлое и зловонное. Рык наполняет округу ужасом, напоминая о безжалостной силе этого монстра. Встретив его, понимаешь, что перед тобой нечто необузданное и опасное."
+        },
+        {
+            "name": "Васелиск",
+            "image": "../IMG/card_boss/boss2.png",
+            "health": 400,
+            "strength": 70,
+            "description": "Васелиск, змей с красными глазами, воплощает страх и опасность в мире Голодных игр. Его гигантское тело, обвитое вокруг темных скал, и красные глаза, сверкающие во мраке, создают атмосферу ужаса и тревоги. Его ядовитый укус и разрушительные атаки делают его опасным противником для любого игрока, решившегося встать на его пути."
+        },
+        {
+            "name": "Ядовитые пчёлы",
+            "image": "../IMG/card_boss/boss3.png",
+            "health": 200,
+            "strength": 100,
+            "description": "Ядовитые пчёлы — опасные враги в мире Голодных игр. Этот зловещий босс представляет собой огромное улей, населенный агрессивными пчёлами, обладающими ядовитым жалом. Они атакуют игроков смертоносными ужалениями, вызывая огромные повреждения и даже отравление. Чтобы победить этого босса, игрокам придется использовать ловкость и стратегию, чтобы избежать ядовитых укусов и найти уязвимые места улья для нанесения ударов. "
+        }
+    ],
+    "extras": [
+        {
+            "name": "Аптечка",
+            "image": "../IMG/card_dop/dop1.png",
+            "strength": 20,
+            "health": 50,
+            "hunger": 10
+        },
+        {
+            "name": "Вода",
+            "image": "../IMG/card_dop/dop2.png",
+            "strength": 5,
+            "health": 20,
+            "hunger": 20
+        },
+        {
+            "name": "Мазь",
+            "image": "../IMG/card_dop/dop3.png",
+            "strength": 5,
+            "health": 60,
+            "hunger": 0
+        },
+        {
+            "name": "Суп",
+            "image": "../IMG/card_dop/dop4.png",
+            "strength": 30,
+            "health": 10,
+            "hunger": 60
+        }
+    ],
+    "locations": [
+        {
+            "name": "Заброшенный дистрикт",
+            "image": "../IMG/location/location1.jpg",
+            "description": "Ржавые остовы зданий и обломки создают мрачный лабиринт из руин. Потрескавшийся асфальт и заброшенные машины служат укрытиями для отчаянных трибутов. В глубине можно найти редкие припасы, но каждый шаг здесь смертельно опасен."
+        },
+        {
+            "name": "Лес в горах",
+            "image": "../IMG/location/location2.jpg",
+            "description": "Зыбкий лабиринт из зеленых деревьев, где каждый шорох может быть последним. Тени играют среди листвы, скрывая тайны и опасности. В этом месте лишь сильные выживают, разгадывая природные загадки и противостоя врагам."
+        },
+        {
+            "name": "Дикий лес",
+            "image": "../IMG/location/location3.jpg",
+            "description": "Темное и запутанное место. Деревья склоняются над головой, создавая глухую тень, а листва шуршит под ногами. Здесь опасность скрывается за каждым углом: хищные звери, скользкая почва и хитрые ловушки поджидают тех, кто решит исследовать эти мрачные просторы."
+        }
+    ]
+}

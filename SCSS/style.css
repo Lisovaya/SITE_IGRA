@@ -1,0 +1,731 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Sorcerer";
+  z-index: 10;
+  background-color: rgb(200, 210, 202);
+  background-image: url("/IMG/загружено.png");
+}
+.header__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header__nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.header__nav ul a {
+  text-decoration: none;
+  color: #353535;
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 3px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+.header__nav ul a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(53, 53, 53);
+  transition: width 0.3s ease;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+.header__nav ul a:hover::after {
+  width: 100%;
+}
+.header__logo {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.header__logo img {
+  width: 160px;
+  height: auto;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 706px;
+  z-index: 5;
+}
+.main .main__image_layer {
+  position: absolute;
+  z-index: 3;
+}
+.main .main__image_layer img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.main__text p {
+  font-size: 45px;
+  line-height: 80px;
+  font-family: "Sorcerer";
+  font-weight: bolder;
+  text-transform: uppercase;
+  background: linear-gradient(to left, #4e4e4e 13%, #666666 27%, #7c7c7c 35%, #666666 40%, #4e4e4e 78%);
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: gradientAnimation 9s linear infinite;
+}
+.main__text .text1 {
+  position: relative;
+  z-index: 6;
+  top: 60px;
+  left: -450px;
+  margin: 10px;
+}
+.main__text .text2 {
+  z-index: 6;
+  position: relative;
+  top: 90px;
+  right: -490px;
+  margin: 10px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#shake:hover {
+  animation: shake 0.2s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: skewX(1deg);
+  }
+  10% {
+    transform: skewX(-8deg);
+  }
+  20% {
+    transform: skewX(23deg);
+  }
+  30% {
+    transform: skewX(-70deg);
+    text-shadow: 17px 8px rgba(0, 0, 0, 0.65);
+  }
+  40% {
+    transform: skewX(30deg);
+  }
+  50% {
+    transform: skewX(-20deg);
+  }
+  60% {
+    transform: skewX(3deg);
+    text-shadow: -10px 8px rgba(0, 0, 0, 0.65);
+  }
+  70% {
+    transform: skewX(-2deg);
+  }
+  80% {
+    transform: skewX(1deg);
+  }
+  90% {
+    transform: skewX(0deg);
+    text-shadow: 30px 18px rgba(0, 0, 0, 0.65);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
+.opisanie {
+  z-index: 6;
+  width: 100%;
+  height: 606px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+  position: relative;
+}
+.opisanie__head-text {
+  position: relative;
+  top: 20px;
+}
+.opisanie__head-text h2 {
+  font-size: 27px;
+  line-height: 80px;
+  font-family: "Sorcerer";
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #353535;
+}
+.opisanie__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  width: 90%;
+  gap: 40px;
+}
+.opisanie__text {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #353535;
+  text-align: center;
+}
+.opisanie__image img {
+  width: 300px;
+  height: 300px;
+}
+
+.banner {
+  width: 100%;
+  height: 35px;
+  background-color: #353535;
+  position: relative;
+  top: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+.banner .marquee {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.banner .marquee span {
+  font-family: "Sorcerer";
+  font-size: 15px;
+  color: aliceblue;
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 20s infinite linear;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(5%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(5%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+.story {
+  z-index: 6;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: -30px;
+}
+.story__head-text {
+  position: relative;
+}
+.story__head-text h2 {
+  font-size: 27px;
+  line-height: 80px;
+  font-family: "Sorcerer";
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #353535;
+}
+.story__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  width: 90%;
+  gap: 40px;
+}
+.story__content .story__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.story__content .story__image img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.story__content .story__text {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #353535;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  background-color: #353535;
+  z-index: 8;
+  font-family: "Sorcerer";
+  position: relative;
+  margin-top: 40px;
+}
+.footer__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__content .contact__head-text {
+  color: #d3d3d3;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+.footer__content .footer__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 360px;
+}
+.footer__content .footer__contact .contact__item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 9px;
+}
+.footer__content .footer__contact .contact__item img {
+  width: 45px;
+  height: 45px;
+}
+.footer__content .footer__contact .contact__item a {
+  text-decoration: none;
+  color: #d3d3d3;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 3px;
+}
+
+.pravila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+  width: 100%;
+  height: 1200px;
+}
+.pravila__head-text {
+  font-size: 27px;
+  line-height: 80px;
+  font-family: "Sorcerer";
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #353535;
+}
+.pravila p {
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+.pravila__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 60px;
+  gap: 40px;
+}
+.pravila__block img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.galereya {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+  width: 100%;
+  height: 4535px;
+  z-index: 4;
+}
+.galereya__head-text {
+  font-size: 27px;
+  line-height: 80px;
+  font-family: "Sorcerer";
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #353535;
+  margin-bottom: 30px;
+}
+.galereya__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.galereya__block h2 {
+  font-size: 17px;
+  line-height: 80px;
+  font-family: "Sorcerer";
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #353535;
+  margin-bottom: 5px;
+}
+.galereya__block .card-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.galereya__block .card {
+  position: relative;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.galereya__block .card img {
+  width: 240px;
+  height: 340px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.galereya__block .card p {
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.galereya__block .card:hover img {
+  box-shadow: 0 0 20px rgba(35, 35, 35, 0.65);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+  z-index: 1000;
+}
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+.overlay .popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin: 160px;
+}
+.overlay .popup .popup-content {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.overlay .popup .popup-content h2 {
+  font-size: 17px;
+  font-family: "Sorcerer";
+  margin-bottom: 50px;
+  text-align: center;
+  color: #353535;
+}
+.overlay .popup .popup-content p {
+  font-size: 17px;
+  margin: 0 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.overlay .popup .popup-content .close-btn {
+  position: absolute;
+  top: -13px;
+  right: -1px;
+  padding: 0;
+  background: transparent;
+  color: #353535;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+.overlay .popup .popup-content__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0 25px;
+}
+.overlay .popup .popup-content__info img {
+  width: 240px;
+  height: 340px;
+  box-shadow: 0 0 10px rgba(35, 35, 35, 0.8);
+  margin-bottom: 20px;
+}
+.overlay .popup .popup-content__info strong {
+  margin-right: 3px;
+}
+
+.history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+  top: 40px;
+  width: 100%;
+  height: 1800px;
+}
+.history__head-text {
+  font-size: 27px;
+  line-height: 80px;
+  font-family: "Sorcerer";
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #353535;
+}
+.history p {
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  margin: 10px;
+}
+.history__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 60px;
+  gap: 40px;
+  flex-direction: row;
+}
+.history__block .img_history {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.history__block-film {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 60px;
+  gap: 40px;
+  flex-direction: column;
+}
+.history .card-film {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.history .card {
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.history .card img {
+  width: 220px;
+  height: 330px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.history .card p {
+  margin-top: 8px;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 4s00;
+  text-align: center;
+  width: 250px;
+  height: 40px;
+}
+.history .card:hover img {
+  box-shadow: 0 0 20px rgba(35, 35, 35, 0.65);
+}
+.history .card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Gerhaus";
+  src: url("/FONTS/Gerhaus.ttf");
+}
+@font-face {
+  font-family: "Arnamu";
+  src: url("/FONTS/arnamu.ttf");
+}
+@font-face {
+  font-family: "Vetrino";
+  src: local("Vetrino"), url("../../FONTS/Vetrino.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+html * {
+  margin: 0;
+  padding: 0;
+}
+html body {
+  background-color: #c8d2ca;
+  height: 100%;
+  width: 100%;
+}
+html body::-webkit-scrollbar {
+  width: 12px;
+  background: transparent;
+}
+html body::-webkit-scrollbar-track {
+  background: transparent;
+}
+html body::-webkit-scrollbar-thumb {
+  background-color: #353535;
+  border-radius: 10px;
+  border: 2px solid #c8d2ca;
+}
+html body::after {
+  z-index: 1;
+  animation: grain 8s steps(10) infinite;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAAAXNSR0IArs4c6QAABq5JREFUWEfVWT9IW1sYv7ditK+T2A6xQxOHCBWnmw4BoQbEoeRmaL2FFIRkuRdE1EGUdEkylFIJhZYQuHeJHYqQlA5JphDwLiVDbyZLBwdvXeIgkkEKfZbXvHd/rz/rkb79XZfjOfnOl+/7nd/5/pzIuq7/IUmS1O12v3vj1tbWD29st9sjl9dVVR325r1ezxs8eYyO42Af5+Pj40Pe/OPHj1gvl8vYt7e3x33XvH+SySTmwWAQcvwrFovYf3JygvV+vw/53d3dIdlXxg4GA3gejUYxmqYJj4hQKBS67LiUyWQwj8Vif3mjZVmYm6aJ/fv7+zgZyimKAjlVVYGYZVlA6tmzZ5ArlUqYb21t/emNm5ub0PPu3TvsUxQFcrZtD8u+Mjafz4Ozd+/ehWe3bt2CZ3Nzc0DYMAxwNxaLETF47DgOEFUUBYgVCgXMc7kckOIdODs7w+cHBwdY73Q60MOTKRQK+L56vY790WgUdui6Dvlms4nPve+TfWXs3NzcqGf58vIykHz8+DE8VFUViPK2xmIxIFQqlYCsruuQi0QiWJ+amgISvV4PeshlRhHOHz58CGQ7nQ71ADnLsrCv1WpB35cvX6BfkiToBbK+MtY0TcZZeiLEzYmJCXjOWxkMBoHIPxca68fHx5jYts1bi89N06Q+jF6c9MZisQikyHGexOTkJPZPT09Db7fbhdzo6Cg4XKvVhmVfGUsaRCIRIJJKpYDA7u6uMGe8bbVaRBaI6boO+VqtxowDrrfbbSAyNjYGhPL5PBALBoNYJxcZDRKJhJDJyHGO1Wr1xwVnfWEs061pmuBMt9sVMketVgMMzPG2bQOBarWK9X6/LyB5cnICBHkSOzs7wkmQ65qmAeH5+XnsVxQFepPJJE8A+icnJyH34MGD4YvawBfGKorC204OYmRtYNv2T4r9OxwdHYGDVznGTJPP54FQr9eDXv49ffoUJxcIBLA/lUphvrGxAeS73S64z1ri9PQUc9d1oeL27dvXZF8Zq2kaPHj16hW4s7a2Bo4cHh5izkzFeMq6NRgMwuNms4mxXq8zPhNR1hZA0DRNIHp8fIzPWYuwXiVoPIlSqYR9KysrQP7Fixc/ZF8Z67ouaoNwOAynWO3wwsmyDIQqlQoQuXnzJuMm1q92EK1WC4gsLCwI3GTl3263sc4TOzw8hDyjTS6Xgx3lchn6GactyxqSfWXs3t4ekOWtJGdWVlZYZQGJmZkZIPDo0SOhugoEApC7ceMGkPj8+TO4zl6NSFcqFah++fKlkPO3t7dxYuFwmPEY+hzHgZyiKLhDmUxmWPaVseydyL1GowGEWG0ZhgFEGFfPz8/hOTOT67pCp7C/vw+E2KUSSeplBhsMBkAsmUyybsb3sK5VFAVzdttene1VXTgGXxg7GAzA2Xg8Dk/IrU+fPoEzRIROxeNxcJedxb179+AsMx27WmYevh+wtyPSuVwOJxiNRqHPdV3oWV1dxfcuLS0BeU3TsO7Z53W3/jGWSaFarbLyh2fRaBRIs4tlzidniWQ2m2Vux352wel0GuuFQgGcZodhWRa7VfZ8QPbbt2/g7tU78/btW8bh7xcZzBfGXuoUgCjjouu6Qv/PTDM7O/tbBBg1eBKMsxsbG0CGd4En0ul0BP2O4+AEJEkC4uFwWKja0un0r+42Eon8/40NhUK4YPScvVe/3wcipEehUBByumVZ+DyRSGCdiDA+P3nyBJ+nUilwt9PpADnGYcZbVVUhR05TLhaL8fuAtG3bQ7KvjGX8ZJ3KLpQcrNfriHeGYZAmQIhRgO8BRJB6Dg4OIHd2dia8I1yNMouLi5Bjz2bbtlAjaJoGZL1e8CKD+cJYVuiNRgO3j/H0UvoFIbPZLLg1MjIChNn/y7KMz1nv/uSvxDibyWSIHPbdv38feojk8+fPhYvNd9lSqYR9X79+BbLobn1pLKskvqOy+mFFv7CwAE83Nzfh6fT0tFC3np+fC/GU7w+Mz9evX+dvFACftOPIl3AizhqDJ5XNZn91t74w1nEc4d3AMAzOgeClrhPzZrMJhBuNBl9uyHWAwFdBrxv15uwE+EbGOLqzswN96XRayFTk6NjYGE5CVVXo9eKx7CtjVVXF+yz/+NLNF5ZIJAKEisWi8OsMuUwEP3z4ACRYp/L1jxU/q7VAICC8787PzyOOr6+v8w4AcU3ThPfaO3fuSLKvjK1UKqgN3r9/L3StrJ74qvf69Wt4+ubNGxxCPp+HfCgUEt4JGI95UouLi/wdTOA2X8Z1Xcd+wzAg9181iRc1/gbPMppdFyAO5gAAAABJRU5ErkJggg==);
+  content: "";
+  height: 300%;
+  width: 300%;
+  left: -100%;
+  top: -110%;
+  opacity: 0.8;
+  position: fixed;
+}
+
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(5%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(5%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}/*# sourceMappingURL=style.css.map */

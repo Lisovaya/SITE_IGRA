@@ -1,0 +1,49 @@
+.banner {
+    width: 100%;
+    height: 35px;
+    background-color: #353535;
+    position: relative;
+    top: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+
+    .marquee {
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+
+        span {
+            font-family: 'Sorcerer';
+            font-size: 15px;
+            color: aliceblue;
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll 20s infinite linear;
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(5%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(5%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+}

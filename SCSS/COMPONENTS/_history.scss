@@ -1,0 +1,97 @@
+.history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    top: 40px;
+    width: 100%;
+    height: 1800px;
+
+    &__head-text {
+        font-size: 27px;
+        line-height: 80px;
+        font-family: 'Sorcerer';
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: #353535;
+    }
+
+    p {
+        font-size: 23px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        text-align: justify;
+        margin: 10px;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 60px;
+        gap: 40px;
+        flex-direction: row;
+
+        .img_history {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+    }
+
+    &__block-film {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 60px;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .card-film {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .card {
+        position: relative;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+            width: 220px;
+            height: 330px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+
+        }
+
+        p {
+            margin-top: 8px;
+            font-size: 17px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            text-align: center;
+            width: 250px;
+            height: 40px;
+        }
+    
+        &:hover img {
+            box-shadow: 0 0 20px rgba(35, 35, 35, 0.65);
+        }
+
+        a {
+            text-decoration: none; 
+            color: inherit;
+        }
+    }
+}

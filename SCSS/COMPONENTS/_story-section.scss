@@ -1,0 +1,54 @@
+.story {
+    z-index: 6;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -30px;
+
+    &__head-text {
+        position: relative;
+
+        h2 {
+            font-size: 27px;
+            line-height: 80px;
+            font-family: 'Sorcerer';
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: #353535;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+        width: 90%;
+        gap: 40px;
+    
+        .story__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+            img {
+                border-radius: 50%;
+                width: 300px;
+                height: 300px;            
+            }
+        }
+
+        .story__text {
+            font-size: 22px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            color: #353535;
+            text-align: center;
+        }
+    }
+}

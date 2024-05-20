@@ -1,0 +1,29 @@
+{
+    "films": [
+        {
+            "name": "Голодные игры",
+            "image": "../IMG/posters_film/Hunger_Games1.webp",
+            "url": "https://www.kinopoisk.ru/film/468581/"
+        },
+        {
+            "name": "Голодные игры: И вспыхнет пламя",
+            "image": "../IMG/posters_film/Hunger_Games2.webp",
+            "url": "https://www.kinopoisk.ru/film/602373/"
+        },
+        {
+            "name": "Голодные игры: Сойка-пересмешница. Часть I",
+            "image": "../IMG/posters_film/Hunger_Games3.webp",
+            "url": "https://www.kinopoisk.ru/film/661911/"
+        },
+        {
+            "name": "Голодные игры: Сойка-пересмешница. Часть II",
+            "image": "../IMG/posters_film/Hunger_Games4.webp",
+            "url": "https://www.kinopoisk.ru/film/663715/"
+        },
+        {
+            "name": "Голодные игры: Баллада о змеях и певчих птицах",
+            "image": "../IMG/posters_film/Hunger_Games5.webp",
+            "url": "https://www.kinopoisk.ru/film/1289334/"
+        }
+    ]
+}
